@@ -28,102 +28,36 @@
     <div class="section2">
 		<div class="container wrapper">
             <div class="row">
-                <div class="col-md-6 mb-4">               
-                    <h3>Berita<div class="btn btn-viewall-s float-right"><a href="arsip/berita">Semua Berita <i class="fa fa-chevron-right"></i></a></div></h3>
-                    <div class="row">                		                        	
-                            <?php
-                            $firstPost = getFirstPost("data", 2, "DESC");
-                            if($firstPost):
-                                ?>
-                            <div class="col-6">
-                                <div class="artikel-img">
-                                 <img src="images/post/<?= $firstPost['img'] ?>" alt="<?= $firstPost['post_title'] ?>">
-                                </div>
+                <?php $post = getListPost("data", 8, 0, 2, "DESC");?>
+                <?php foreach($post as $key => $value):?>
+                    <div class="col-md-6 mb-4">               
+                        <div class="row"> 
+                            <div class="col-12">
+                                <a href="<?= $post[$key]['type'] ?>/<?= $post[$key]['post_slug'] ?>" title="<?= $post[$key]['post_title'] ?>">
+                                    <div class="artikel-img">
+                                        <img src="images/post/<?= $post[$key]['img_no_header'] ?>" alt="<?= $post[$key]['post_title'] ?>" style="height:350px">
+                                    </div>
+                                </a>
                             </div>
-                            <div class="col-6">
-                                <div class="artikel-content">
-                                <h2><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="<?= $firstPost['post_title'] ?>"><?= $firstPost['post_title'] ?></a></h2>
-                                <p><?= $firstPost['post_short'] ?></p>
-                                <p><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="">Baca Selengkapnya &rarr;</a></p>
-                                </div>
-                            </div>
-                            <?php
-                            endif;
-                            ?>
+                        </div>
                     </div>
-    			</div>
-                <div class="col-md-6 mb-4">               
-                    <h3>Liputan<div class="btn btn-viewall-s float-right"><a href="arsip/liputan">Semua Liputan <i class="fa fa-chevron-right"></i></a></div></h3>
-                    <div class="row">                                                   
-                            <?php
-                            $firstPost = getFirstPost("data", 4, "DESC");
-                            if($firstPost):
-                                ?>
-                            <div class="col-6">
-                                <div class="artikel-img">
-                                 <img src="images/post/<?= $firstPost['img'] ?>" alt="<?= $firstPost['post_title'] ?>">
-                                </div>
+                <?php endforeach?>
+            </div>
+            <div class="row">
+                <?php $post2 = getListPost("data", 15, 0, 2, "DESC");?>
+                <?php foreach($post2 as $key => $value):?>
+                    <div class="col-md-6 mb-4">               
+                        <div class="row"> 
+                            <div class="col-12">
+                                <a href="<?= $post2[$key]['type'] ?>/<?= $post2[$key]['post_slug'] ?>" title="<?= $post2[$key]['post_title'] ?>">
+                                    <div class="artikel-img">
+                                        <img src="images/post/<?= $post2[$key]['img_no_header'] ?>" alt="<?= $post2[$key]['post_title'] ?>" style="height:350px">
+                                    </div>
+                                </a>
                             </div>
-                            <div class="col-6">
-                                <div class="artikel-content">
-                                <h2><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="<?= $firstPost['post_title'] ?>"><?= $firstPost['post_title'] ?></a></h2>
-                                <p><?= $firstPost['post_short'] ?></p>
-                                <p><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="">Baca Selengkapnya &rarr;</a></p>
-                                </div>
-                            </div>
-                            <?php
-                            endif;
-                            ?>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4">               
-                    <h3>Artikel<div class="btn btn-viewall-s float-right"><a href="arsip/artikel">Semua Artikel <i class="fa fa-chevron-right"></i></a></div></h3>
-                    <div class="row">                                                   
-                            <?php
-                            $firstPost = getFirstPost("data", 1, "DESC");
-                            if($firstPost):
-                                ?>
-                            <div class="col-6">
-                                <div class="artikel-img">
-                                 <img src="images/post/<?= $firstPost['img'] ?>" alt="<?= $firstPost['post_title'] ?>">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="artikel-content">
-                                <h2><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="<?= $firstPost['post_title'] ?>"><?= $firstPost['post_title'] ?></a></h2>
-                                <p><?= $firstPost['post_short'] ?></p>
-                                <p><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="">Baca Selengkapnya &rarr;</a></p>
-                                </div>
-                            </div>
-                            <?php
-                            endif;
-                            ?>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">               
-                    <h3>Profil<div class="btn btn-viewall-s float-right"><a href="arsip/profil">Semua Profil <i class="fa fa-chevron-right"></i></a></div></h3>
-                    <div class="row">                                                   
-                            <?php
-                            $firstPost = getFirstPost("data", 3, "DESC");
-                            if($firstPost):
-                                ?>
-                            <div class="col-6">
-                                <div class="artikel-img">
-                                 <img src="images/post/<?= $firstPost['img'] ?>" alt="<?= $firstPost['post_title'] ?>">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="artikel-content">
-                                <h2><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="<?= $firstPost['post_title'] ?>"><?= $firstPost['post_title'] ?></a></h2>
-                                <p><?= $firstPost['post_short'] ?></p>
-                                <p><a href="<?= $firstPost['type'] ?>/<?= $firstPost['post_slug'] ?>" title="">Baca Selengkapnya &rarr;</a></p>
-                                </div>
-                            </div>
-                            <?php
-                            endif;
-                            ?>
-                    </div>
-                </div>
+                <?php endforeach?>
     		</div>    	
     	</div>  
     </div>

@@ -13,17 +13,16 @@ if( (!isset($_GET['p'])) || ($_GET['p']=="")){ $_GET['p']=1; }
 <?php include("include/header.php"); ?>
 
     <div class="archive">
-        <!--
-    	<div class="archive-featimg" style="background: #28246D url(images/post/<?= getthumCategory(rClean($_GET['subtype'])) ?>) no-repeat center center"><div class="blacked"></div></div>
-        -->
+        <div class="box-title d-flex align-items-center">
+            <div class="container">
+                <h1 class="head-title mb-0"><?= strtoupper(ucwords(rClean($_GET['subtype']))) ?></h1>
+            </div>
+        </div>
+        <br/><br/>
         <div class="container wrapper">
         	<div class="archive-content">
                 <div class="row">
-                    <div class="col-md-12">
-                    	<h1 class="h1-nonbg">Arsip <?= ucwords(rClean($_GET['subtype'])) ?></h1>
-                    </div>
                     <div class="col-md-8">
-                    
                     	<div class="archive-whitearea">                        
                         	<!-- UMUM -->
                             <?php foreach ($data as $key => $value): ?>
