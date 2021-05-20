@@ -1,0 +1,144 @@
+RewriteEngine On
+
+ErrorDocument 404 /404.php
+
+# post (artikel, peraturan, statis)
+
+RewriteRule ^dashboard/?$ index.php
+
+RewriteRule ^all-data/?$ post-all.php?type=data
+RewriteRule ^all-data/([A-Za-z]+)/?$ post-all.php?type=data&notif=$1
+RewriteRule ^edit-data/([0-9]+)-([A-Za-z]+)/?$ post-new-edit.php?type=data&id=$1&act=edit&notif=$2
+RewriteRule ^edit-data/([0-9]+)/?$ post-new-edit.php?type=data&id=$1&act=edit
+RewriteRule ^new-data/?$ post-new-edit.php?type=data&act=new
+RewriteRule ^new-data/([A-Za-z]+)/?$ post-new-edit.php?type=data&act=new&notif=$1
+RewriteRule ^post-delete-data-([0-9]+)/?$ post-delete-data.php?id=$1
+#---
+
+RewriteRule ^all-data-slide/?$ post-all-slide.php?type=data
+RewriteRule ^all-data-slide/([A-Za-z]+)/?$ post-all-slide.php?type=data&notif=$1
+RewriteRule ^edit-data-slide/([0-9]+)-([A-Za-z]+)/?$ post-new-edit-slide.php?type=data&id=$1&act=edit&notif=$2
+RewriteRule ^edit-data-slide/([0-9]+)/?$ post-new-edit-slide.php?type=data&id=$1&act=edit
+RewriteRule ^new-data-slide/?$ post-new-edit-slide.php?type=data&act=new
+RewriteRule ^new-data-slide/([A-Za-z]+)/?$ post-new-edit-slide.php?type=data&act=new&notif=$1
+RewriteRule ^post-delete-data-slide-([0-9]+)/?$ post-delete-slide.php?type=data&id=$1
+#---
+
+
+RewriteRule ^all-static-([A-Za-z]+)/?$ post-all.php?type=static&subtype=$1
+RewriteRule ^all-static-([A-Za-z]+)-([A-Za-z]+)/?$ post-all.php?type=static&subtype=$1&notif=$2
+RewriteRule ^edit-static-([A-Za-z]+)-([0-9]+)-([A-Za-z]+)/?$ post-new-edit.php?type=static&subtype=$1&id=$2&act=edit&notif=$3
+RewriteRule ^edit-static-([A-Za-z]+)-([0-9]+)/?$ post-new-edit.php?type=static&subtype=$1&id=$2&act=edit
+RewriteRule ^new-static-([A-Za-z]+)/?$ post-new-edit.php?type=static&subtype=$1&act=new
+RewriteRule ^new-static-([A-Za-z]+)-([A-Za-z]+)/?$ post-new-edit.php?type=static&subtype=$1&act=new&notif=$2
+RewriteRule ^post-delete-static-([A-Za-z]+)-([0-9]+)/?$ post-delete.php?type=static&subtype=$1&id=$2
+
+
+# komentar
+RewriteRule ^comments/?$ comments.php
+
+RewriteRule ^comments-ds/?$ comments.php?notif=ds
+
+RewriteRule ^comments-as/?$ comments.php?notif=as
+
+RewriteRule ^post-delete-komentar-([0-9]+)/?$ comments-delete.php?id=$1
+
+RewriteRule ^post-approve-komentar-([0-9]+)/?$ comments-approve.php?id=$1
+
+#pengguna
+RewriteRule ^pengguna/?$ pengguna.php
+
+RewriteRule ^do.deleteuser-([0-9]+)/?$ do.deleteuser.php?&id=$1
+
+RewriteRule ^pengguna-edit-([0-9]+)-([A-Za-z]+)/?$ pengguna-new-edit.php?&id=$1&act=edit&notif=$2
+
+RewriteRule ^pengguna-edit-([0-9]+)/?$ pengguna-new-edit.php?id=$1&act=edit
+
+RewriteRule ^pengguna-new/?$ pengguna-new-edit.php?act=new
+
+RewriteRule ^pengguna-ds/?$ pengguna.php?notif=ds
+
+RewriteRule ^pengguna-new-([A-Za-z]+)/?$ pengguna-new-edit.php?act=new&notif=$1
+
+RewriteRule ^group-pengguna/?$ group-pengguna.php
+
+RewriteRule ^group-pengguna-ds/?$ group-pengguna.php?notif=ds
+
+RewriteRule ^group-pengguna-new/?$ group-pengguna-new-edit.php?act=new
+
+RewriteRule ^group-pengguna-edit-([0-9]+)/?$ group-pengguna-new-edit.php?id=$1&act=edit
+
+RewriteRule ^group-pengguna-edit-([0-9]+)-([A-Za-z]+)/?$ group-pengguna-new-edit.php?&id=$1&act=edit&notif=$2
+
+RewriteRule ^do.deletegroupuser-([0-9]+)/?$ do.deletegroupuser.php?&id=$1
+
+
+#pengaturan umum
+RewriteRule ^pengaturan-umum/?$ pengaturan-umum.php
+
+
+#pengaturan kontak
+RewriteRule ^pengaturan-kontak/?$ pengaturan-kontak.php
+
+
+#pengaturan akun
+RewriteRule ^pengaturan-akun/?$ pengaturan-akun.php
+
+RewriteRule ^pengaturan-akun-([A-Za-z]+)/?$ pengaturan-akun.php?notif=$1
+
+
+#pengaturan akun
+RewriteRule ^login/?$ login.php
+RewriteRule ^login-([A-Za-z]+)/?$ login.php?notif=$1
+
+#blank
+RewriteRule ^blank/?$ blank.php
+
+
+# upload
+RewriteRule ^library-upload/?$ upload.php
+
+RewriteRule ^library-upload-n-([A-Za-z]+)/?$ upload.php?notif=$1
+
+RewriteRule ^library-upload-edit-([0-9]+)-([A-Za-z]+)/?$ upload-new-edit.php?&id=$1&act=edit&notif=$2
+
+RewriteRule ^library-upload-edit-([0-9]+)/?$ upload-new-edit.php?&id=$1&act=edit
+
+RewriteRule ^library-upload-new/?$ upload-new-edit.php?act=new
+
+RewriteRule ^library-upload-new-([0-9]+)-([A-Za-z]+)/?$ upload-new-edit.php?act=new&id=$1&notif=$2
+
+RewriteRule ^upload-delete-([0-9]+)/?$ upload-delete.php?id=$1
+
+
+#blank
+RewriteRule ^reset-password/?$ reset-password.php
+
+# category
+RewriteRule ^category/?$ category.php
+
+RewriteRule ^category-n-([A-Za-z]+)/?$ category.php?notif=$1
+
+RewriteRule ^category-edit-([0-9]+)-([A-Za-z]+)/?$ category-new-edit.php?&id=$1&act=edit&notif=$2
+
+RewriteRule ^category-edit-([0-9]+)/?$ category-new-edit.php?&id=$1&act=edit
+
+RewriteRule ^category-new/?$ category-new-edit.php?act=new
+
+RewriteRule ^category-new-([0-9]+)-([A-Za-z]+)/?$ category-new-edit.php?act=new&id=$1&notif=$2
+
+RewriteRule ^category-delete-([0-9]+)/?$ category-delete.php?id=$1
+
+
+#survey
+RewriteRule ^survey-new/?$ survey-new.php
+
+RewriteRule ^survey/?$ survey.php
+
+RewriteRule ^survey-view-([0-9]+)/?$ survey-view.php?id=$1
+
+RewriteRule ^survey-ns/?$ survey.php?notif=$1
+
+RewriteRule ^survey-cs/?$ survey.php?notif=$1
+
+RewriteRule ^do.closesurvey-([0-9]+)/?$ do.closesurvey.php?&id=$1

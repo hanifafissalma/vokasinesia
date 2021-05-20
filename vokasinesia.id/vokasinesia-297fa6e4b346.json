@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vokasinesia",
+  "private_key_id": "297fa6e4b3466290c5388d7f26f6ca068adf45f3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCH6VEnG7jIZWw1\nTwcdZXPp1FkMZj7Z/4X67FuZDgHmllXN/yu2us2Wo7khvJXLUByG2G3zjjESzTzJ\n1DjO5/mVGlkzpOt4W7MKy2N5pDP31aKhXvcQdJ4tRU9xgR1RBLooFxXp6zzLRHnJ\n5YkWDJ7XycbmdaT44XYDiTU12YjuZaIzaxo2EoEy/wOKiQ+AGhaUoWPyvrE9hhvJ\nZLQQDuxMN23JD3nZCdGssVOr/FKo8cZQMaQe8W2wjGOPHqxLFoGOTzfj0Isq8b3p\n6KhKkYCWgvzxs2St6K7H9wmfhBLjP48N8wZte6K617MbD43B88NVDtWa8PJpE7ES\n+9AhrxLjAgMBAAECggEACeKDxvrirRyHSrdFNrOewxZxJZA4KQXHGlFfdhnJNJqh\ngfp5lPAwLLEasWP0ZxWcBYivMoQYeJwZvDolqZLAmcIRU8q+X4IX2wSg5wN0ziUp\nD2CHSpiYuoUsen5gAfj8ixbmvp0fzk7cJr19g2+Gi/4+a5uJ1JodSbOMfa6lIWWC\ny/keARn13IyiSrWbDHT6h597vFtdY4f4jQTF6APjsCeDzL6m4Me9RysBww313U8K\nPecjROS6TSBKsbsNkXJ33ocmW9B1i4vUaSj8TKC8rhxzkY8G4SUmu21kdN5sfRjW\nPjNjtoaAehhPWIOYliH5LpSexMNlhYMKDIj0/DNuCQKBgQC9vcvnFMmc/kYQ7aCH\nvr2HfXlZiKEKiedFKNIZL7OTotpZYCrLmA/woYf+XBmO8ds6wedMRdy7+eJ1cMLS\nZDy5ZorTmQIa4tiMXQDz92f3jumXjRd/vYG2kbOpr4W3N7U8I8KyRWz8TXZjstRO\nyGg/VRzmX8RYmuUzJjZ1RsZlCwKBgQC3X0+NPZdA7r2uu/UHytAPIBI+JOFuXgtF\nUgHP0TH66V9yAlcSjrZdYgvFSlCn4UENbN0QjHdfXCI4IJMMEK/62ybDrgrCq3A6\n3owNt0yXFSBopE09830he4Nf0Ocp72jz7gx00Mv4pjb9x7pJiwKmej/K52FvMWCZ\nLYQLcGkAiQKBgB74QLTaDsJiOnt+3cnqVzMrRshXZbm7opUGQay8vXnmhe86pCGR\nE2D6bKEW1VEgpuDjT2aCrLG96rmyiwoeNE8qrpQ1EEPlLOVUNNidVEny+Ku06tX9\nz5NGGuYicRfjruA/EgNZE53m4uEJCmBFk8ZqlQoBLaIsviZoIVFpGO7bAoGBAIva\n5ZGTqAieDY13TSrkREtE6qT6+/RxRadZJIibxMLZuzH5Fu/QaMZQQSn3xAxGgJb8\nsJ4ug9z3KCImtgA9ufpZqvcThqFyn+ZGVgsgAgo40r78kOzvCEDBMzGg4q3ZKvLg\nXB+8H9VE8CweaLYuj5bpJj5aurVTs5kgXdVbproBAoGALBQvHwlDgkbJ9BHDm7nk\nwo8yF69CfmMjAvcAIycOMe67r5ElXglsAvSBNPnZm9R5nc7XJS9TTvU5CwYQ1Z26\nj1BcUm5VF7GzYkIbQxWf7JO9AXAHC4t/mdFC5fWAa6uwSBuV3Tx0o1OApU8cUyRR\n9z0enfUjztx3PqXQ/PL2VDs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vokasianalytic@vokasinesia.iam.gserviceaccount.com",
+  "client_id": "116228742372168653943",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vokasianalytic%40vokasinesia.iam.gserviceaccount.com"
+}

@@ -1,0 +1,177 @@
+/*DARKMODE*/
+.bg {
+  color: #111;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -42;
+}
+.toggle-wrap { border: 2px solid #FFF; background: #CCC; position: fixed; bottom: 20px; right: 20px; z-index: 9; width: 120px; height: 45px; border-radius: 30px; box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25); }
+.toggle {
+  background: #CCC;
+  border-radius: 20px;
+  cursor: pointer;
+  visibility: hidden;
+  height: 24px;
+  width: 45px;
+  position: fixed; 
+  bottom: 30px; 
+  right: 57px; 
+  z-index: 10;
+}
+.toggle-text-dark { position: fixed; bottom: 29px; right: 33px; color: #000; z-index: 11; }
+.toggle-text-normal { position: fixed; bottom: 29px; right: 110px; color: #FFF; z-index: 11; }
+.toggle::before, .toggle::after {
+  content: "";
+  display: block;
+  -webkit-transition: 0.25s all ease-in-out;
+  transition: 0.25s all ease-in-out;
+  visibility: visible;
+}
+.toggle::before {
+  background: #EEE;
+  border-radius: 20px;
+  height: inherit;
+  width: inherit;
+}
+.toggle::after {
+  background: #ED1C24;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.toggle:checked::before {
+  background: #ED1C24;
+}
+.toggle:checked::after {
+  background: #FFF;
+  left: 22.5px;
+}
+.toggle:checked ~ .bg {
+  background: #111;
+}
+.toggle:checked ~ main .navigation {
+  background: #111;
+  border-bottom: 1px solid #333;
+}
+.toggle:checked ~ main nav ul li a,
+.toggle:checked ~ main nav ul li a:visited,
+.toggle:checked ~ main .nav-mobile {
+  background: #111;
+}
+.toggle:checked ~ main #nav-toggle span,
+.toggle:checked ~ main #nav-toggle span:before,
+.toggle:checked ~ main #nav-toggle span:after {
+	background: #FFF;
+}
+.toggle:checked ~ main #nav-toggle.active span {
+  background-color: transparent;
+}
+.toggle:checked ~ main nav ul li a:hover,
+.toggle:checked ~ main nav ul li a:visited:hover {
+  background: #222;
+}
+.toggle:checked ~ main .toplogo {
+  display: none;
+}
+.toggle:checked ~ main .toplogo-wh {
+  display: block;
+}
+.toggle:checked ~ .toggle-text-dark,
+.toggle:checked ~ .toggle-text-normal { color: #FFF; }
+.toggle:checked ~ main .nav-trigger span,
+.toggle:checked ~ main .nav-trigger span::before,
+.toggle:checked ~ main .nav-trigger span::after {
+  background: #FFF;
+}
+.toggle:checked ~ main .nav-container h2 {
+  color: #007AFF;
+}
+.toggle:checked ~ main .nav-container {
+  background: #333;
+}
+.toggle:checked ~ main .nav-dropdown {
+	border: 1px solid #333;
+  	border-top: none;
+}
+.toggle:checked ~ main h3 {
+  color: #FFF;
+}
+.toggle:checked ~ main .artikel-content {
+  color: #888 !important;
+}
+.toggle:checked ~ main .video-box,
+.toggle:checked ~ main .box-sosmed,
+.toggle:checked ~ main .box-sidebar,
+.toggle:checked ~ main .archive-right-box,
+.toggle:checked ~ main .archive-whitearea {
+  background: #111;
+  border: 1px solid #333;
+  color: #888 !important;
+}
+.toggle:checked ~ main .archive-whitearea-box { border-bottom: 1px solid #333; }
+.toggle:checked ~ main .archive-right-box ul li a { border-bottom: 1px solid #333; background: url(../images/arrow-wh.png) no-repeat left center; }
+.toggle:checked ~ main .archive-right-box ul li a:hover { background-position: .5em center; padding: .5em 1.5em; }
+.toggle:checked ~ main .archive-right-box .search {  
+  background-color: #222;
+  border: 1px solid #333;
+}
+.toggle:checked ~ main .archive-right-box .search-input {
+  background-color: #222;
+}
+.toggle:checked ~ main .video-item { border-bottom: 1px solid #333; }
+.toggle:checked ~ main .video-item:last-child { border-bottom: none; }
+.toggle:checked ~ main a.page-link { background: transparent; border: 1px solid #333; }
+.toggle:checked ~ main .comment-widgets .comment-row,
+.toggle:checked ~ main .commentarea-form { border-bottom: 1px solid #333; } 
+.toggle:checked ~ main .form-control { background: #222; border: 1px solid #333; }
+.toggle:checked ~ main .footer {
+  background: #111 !important;
+  border-top: 1px solid #333;
+  color: #888 !important;
+}
+
+.toggle:checked ~ main .btn-viewall-s,
+.toggle:checked ~ main .btn-viewall { background: #111; color: #FFF; border: 1px solid #333; }
+
+.toggle:checked ~ main .footer h4 {
+  color: #FFF;
+}
+.toggle:checked ~ main a,
+.toggle:checked ~ .nav-container a {
+  color: #FFF !important;
+}
+.toggle:checked ~ main .separator { background: #333; }
+.toggle:checked ~ main ul.artikel-list li { border-color: #333; }
+.toggle:checked ~ main .slick-prev:before,
+.toggle:checked ~ main .slick-next:before { color: #FFF; }
+.toggle:checked ~ main .company-slide-box img { filter: invert(1) grayscale(100%); border: 1px solid #CCC; }
+.toggle:checked ~ main .company-slide-box img:hover { filter: opacity(1) grayscale(0%); }
+
+.toggle:checked ~ main .details-whitearea,
+.toggle:checked ~ main .sharearea,
+.toggle:checked ~ main .relatedarea,
+.toggle:checked ~ main .tagsarea,
+.toggle:checked ~ main .commentarea,
+.toggle:checked ~ main .details-right-box { background: #111; border: 1px solid #333; color: #FFF; }
+.toggle:checked ~ main .contact-section span { color: #FFF; }
+.toggle:checked ~ main .contact-section { color: #888; }
+.toggle:checked ~ main .tagsarea ul li { background: #222; }
+.toggle:checked ~ main .header_comment{ border-bottom: 1px solid #333; }
+.toggle:checked ~ main .details-content h1.h1-nonbg { color: #FFF !important; }
+.toggle:checked ~ main .archive-content h1.h1-nonbg { color: #FFF !important; }
+.toggle:checked ~ main .box_comment { border: 1px solid #333; background: #111; }
+.toggle:checked ~ main .box_comment textarea { background: #111; }
+.toggle:checked ~ main .box_comment .box_post { border-top: 1px solid #333; background: #191919; }
+
+.toggle:checked ~ main .inputGroup { background-color: #222; color: #FFF; }
+.toggle:checked ~ main .inputGroup label:after { border: 2px solid #FFF; background-color: #222; background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23222' fill-rule='nonzero'/%3E%3C/svg%3E "); }
+.toggle:checked ~ main .inputGroup input:checked ~ label { color: #FFF; }
+.toggle:checked ~ main .inputGroup input:checked ~ label:after { background-color: #ED1C24; border-color: #ED1C24; background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E "); }
+
+.toggle:checked ~ main .blacked { width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(17,17,17,0) 0%,rgba(17,17,17,1) 80%); }

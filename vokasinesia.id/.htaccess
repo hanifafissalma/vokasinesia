@@ -1,0 +1,51 @@
+RewriteEngine On
+
+ErrorDocument 404 /404.php
+
+RewriteRule ^404/?$ 404.php
+
+#post (artikel, peraturan, statis)
+
+RewriteRule ^kontak/s/?$ kontak.php?x=s
+
+RewriteRule ^galeri/s/?$ galeri.php?x=s
+
+RewriteRule ^data/([A-Za-z0-9\-\.]+)/?$ details.php?type=data&slug=$1
+
+RewriteRule ^data/([A-Za-z0-9\-\.]+)/s?$ details.php?type=data&slug=$1&notif=s
+
+RewriteRule ^static/([A-Za-z0-9\-\.]+)/?$ details.php?type=static&slug=$1
+
+RewriteRule ^arsip/([A-Za-z0-9\-\.]+)/?$ arsip.php?subtype=$1
+
+RewriteRule ^arsip/([0-9A-Za-z\-\.]+)/([0-9]+)/?$ arsip.php?subtype=$1&p=$2
+
+RewriteRule ^do.comments/?$ do.comments.php
+
+RewriteRule ^do.survey/?$ do.survey.php
+
+RewriteRule ^pencarian/?$ pencarian.php
+
+RewriteRule ^pencarian/([0-9A-Za-z\-\.]+)/([0-9]+)/?$ pencarian.php?s=$1&p=$2
+
+RewriteRule ^tag/?$ tag.php
+
+RewriteRule ^tag/([0-9A-Za-z\-\.]+)/?$ tag.php?tag=$1
+
+RewriteRule ^tag/([0-9A-Za-z\-\.]+)/([0-9]+)/?$ tag.php?tag=$1&p=$2
+
+RewriteRule ^sitemap/?$ sitemap.php
+
+RewriteRule ^kontak/?$ kontak.php
+
+RewriteRule ^galeri/?$ galeri.php
+
+RewriteRule ^do.kontak/?$ do.kontak.php
+
+RewriteRule ^preview/([A-Za-z0-9\-\.]+)/?$ preview.php?type=data&slug=$1
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+     Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

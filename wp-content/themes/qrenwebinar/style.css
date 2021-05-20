@@ -1,0 +1,115 @@
+/* 
+
+	Theme Name: QRENWEBINAR
+
+	Version: 1.0
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+
+
+body { background: url(img/bg2.jpg) no-repeat top left; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; font-family: 'Montserrat', sans-serif !important; }
+
+
+
+a { color: #ED1C24 !important; }
+
+a:hover { color: #191919 !important; text-decoration: none !important; }
+
+
+
+.toparea { padding: 1em 0; }
+
+.toparea img { height: 100px; width: auto; }
+
+.logo-qren { text-align: left; }
+
+.logo-telkom { text-align: right; }
+
+
+
+.contentarea { padding: 2em 0 5em 0; }
+
+.content-box { overflow: hidden; }
+
+.content-box h1 { font-size: 1.5em; font-weight: 700; }
+
+.content-box-img {}
+
+.content-box-img img { width: 100%; height: auto; }
+
+.content-box-content { padding: 1em; }
+
+.content-box-title { margin: .8em 0 1.3em 0; }
+
+.content-box-text { margin:  0 0 2em 0; }
+
+.content-box-more {}
+
+.content-box .btn-custom { background: #ED1C24; border: 1px solid #ED1C24; color: #FFF !important; width: 100%; }
+
+
+
+.singlecontentarea { padding: 2em 0 5em 0; }
+
+.singlecontentarea h1 { font-weight: 800; font-size: 4em; color: #ED1C24; margin: 0 0 .5em 0; }
+
+.singlecontentarea h3 { font-weight: 700; font-size: 1,5em; color: #ED1C24; }
+
+.singlecontentarea-video { margin:  0 0 2em 0; }
+
+.singlecontentarea-text {}
+
+
+
+.footerarea { padding: 1em 0; border-top: 1px solid #DDD; }
+
+.footer-copyright {}
+
+.footer-sosmed { text-align: right; }
+
+.footer-sosmed ul { padding: 0; margin: 0; }
+
+.footer-sosmed ul li { display: inline; margin: 0 0 0 1em; }
+
+
+
+@media (min-aspect-ratio: 16/9) {
+
+}
+
+
+
+@media (max-aspect-ratio: 16/9) {
+
+
+
+}
+
+
+
+@media (max-width: 767px) {
+
+.toparea img { height: 80px; width: auto; }
+
+.singlecontentarea-left { margin: 0 0 3em 0; }
+
+.singlecontentarea h1 { font-weight: 700; font-size: 2em; text-align: center; }
+
+.singlecontentarea h3 { font-weight: 600; font-size: 1,2em; }
+
+.singlecontentarea-text { text-align: center; }
+
+.footer-copyright { text-align: center; margin: 0 0 1em 0; }
+
+.footer-sosmed { text-align: center; }
+
+.footer-sosmed ul li { display: inline; margin: 0 1em; font-size: 1.5em; }
+
+.footer-sosmed .gone { display: none; }
+
+}
