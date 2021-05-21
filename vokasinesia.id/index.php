@@ -30,12 +30,12 @@
             <div class="row">
                 <?php $post = getListPost("data", 8, 0, 2, "DESC");?>
                 <?php foreach($post as $key => $value):?>
-                    <div class="col-md-6 mb-4">               
+                    <div class="col-md-6 col-sm-12 mb-4">               
                         <div class="row"> 
                             <div class="col-12">
                                 <a href="<?= $post[$key]['type'] ?>/<?= $post[$key]['post_slug'] ?>" title="<?= $post[$key]['post_title'] ?>">
                                     <div class="artikel-img">
-                                        <img src="images/post/<?= $post[$key]['img_no_header'] ?>" alt="<?= $post[$key]['post_title'] ?>" style="height:350px">
+                                        <img src="images/post/<?= $post[$key]['img_no_header'] ?>" alt="<?= $post[$key]['post_title'] ?>" class="post-photo">
                                     </div>
                                 </a>
                             </div>
@@ -46,12 +46,12 @@
             <div class="row">
                 <?php $post2 = getListPost("data", 15, 0, 2, "DESC");?>
                 <?php foreach($post2 as $key => $value):?>
-                    <div class="col-md-6 mb-4">               
+                    <div class="col-md-6 col-sm-12 mb-4">               
                         <div class="row"> 
                             <div class="col-12">
                                 <a href="<?= $post2[$key]['type'] ?>/<?= $post2[$key]['post_slug'] ?>" title="<?= $post2[$key]['post_title'] ?>">
                                     <div class="artikel-img">
-                                        <img src="images/post/<?= $post2[$key]['img_no_header'] ?>" alt="<?= $post2[$key]['post_title'] ?>" style="height:350px">
+                                        <img src="images/post/<?= $post2[$key]['img_no_header'] ?>" alt="<?= $post2[$key]['post_title'] ?>" class="post-photo">
                                     </div>
                                 </a>
                             </div>
@@ -99,7 +99,7 @@
                 $video = getListPost("data", 6, 0, 2, "DESC");
                 if($video):
                     foreach($video as $key => $value): ?>
-                    <div class="col-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="video-box">
                             <div class="row">
                                 <div class="col-md-12">
@@ -138,10 +138,10 @@
             </p>  
             <br/>
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12 mt-3">
                     <img src="https://vokasi.kemdikbud.go.id/themes/default/images/about.jpg" alt="about" width="100%">
                 </div>
-                <div class="col-md-8 col-sm-12">
+                <div class="col-md-8 col-sm-12 mt-3">
                     <h4>
                         Tugas Pokok dan Fungsi
                     </h4>

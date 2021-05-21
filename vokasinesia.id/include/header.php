@@ -51,6 +51,26 @@
         line-height:40px;
         font-weight: 900;
     }
+    .post-photo{
+      height:350px;
+    }
+    @media(max-width:576px){
+      .post-photo{
+        width:100%;
+        height:auto;
+      }
+
+    .col-sm-6{
+      width:50%;
+    }
+    .col-sm-1{
+      width:8.3%;
+    }
+
+    .col-sm-11{
+      width:90%;
+    }
+    }
   </style>
 	<body>    
     

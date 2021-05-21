@@ -36,10 +36,10 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-md-1">
+                            <div class="col-md-1 col-sm-1">
                                 <i class="fa fa-phone"></i>
                             </div>
-                            <div class="col-md-11">
+                            <div class="col-md-11 col-sm-11">
                                 <?= $pKontak['phone'] ?>
                             </div>
                         </div>

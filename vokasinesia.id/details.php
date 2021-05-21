@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <div class="archive-right-box">
-                            <h3>Kategori Arsip</h3>
+                            <h3>Kategori</h3>
                             <ul>
                             <?php $category = listCategory(); ?>
                             <?php foreach ($category as $key => $value): ?>
