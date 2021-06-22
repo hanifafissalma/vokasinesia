@@ -52,12 +52,12 @@
         font-weight: 900;
     }
     .post-photo{
-      height:350px;
+      height:350px !important;
     }
     @media(max-width:576px){
       .post-photo{
         width:100%;
-        height:auto;
+        height:auto !important;
       }
 
     .col-sm-6{

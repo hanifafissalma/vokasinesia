@@ -25,10 +25,10 @@ define('WP_CACHE', true);
 define( 'DB_NAME', 'skemavok_mainweb' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'skemavok_vokasi' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'JN)(UoiJsesd19' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

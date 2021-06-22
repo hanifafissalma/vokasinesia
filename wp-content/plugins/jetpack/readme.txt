@@ -1,8 +1,8 @@
 === Jetpack - WP Security, Backup, Speed, & Growth ===
 Contributors: automattic, adamkheckler, aduth, akirk, allendav, alternatekev, andy, annezazu, apeatling, azaozz, batmoo, barry, beaulebens, biskobe, blobaugh, brbrr, cainm, cena, cfinke, chaselivingston, chellycat, clickysteve, csonnek, danielbachhuber, davoraltman, daniloercoli, delawski, designsimply, dllh, drawmyface, dsmart, dzver, ebinnion, egregor, eliorivero, enej, eoigal, erania-pinnera, ethitter, fgiannar, gcorne, georgestephanis, gibrown, goldsounds, hew, hugobaeta, hypertextranch, iammattthomas, iandunn, jblz, jasmussen, jeffgolenski, jeherve, jenhooks, jenia, jessefriedman, jgs, jkudish, jmdodd, joanrho, johnjamesjacoby, jshreve, kbrownkd, keoshi, koke, kraftbj, lancewillett, leogermani, lschuyler, macmanx, martinremy, matt, matveb, mattwiebe, maverick3x6, mcsf, mdawaffe, mdbitz, MichaelArestad, migueluy, mikeyarce, mkaz, nancythanki, nickmomrik, obenland, oskosk, pento, professor44, rachelsquirrel, rdcoll, ryancowles, richardmuscat, richardmtl, robertbpugh, roccotripaldi, samhotchkiss, scarstocea, scottsweb, sdquirk, sermitr, simison, stephdau, tmoorewp, tyxla, Viper007Bond, westi, yoavf, zinigor
 Tags: WP, backup, social, AMP, WooCommerce, malware, scan, spam, CDN, social
-Stable tag: 9.4
-Requires at least: 5.5
+Stable tag: 9.5.3
+Requires at least: 5.6
 Requires PHP: 5.6
 Tested up to: 5.7
 
@@ -238,6 +238,35 @@ Our Cookie and Consent Banner can help you comply with GDPR. The European Unionâ
 4. Promote your newest posts, pages, and products across your social media channels.
 
 == Changelog ==
+
+= 9.5.3 =
+Release date: June 2, 2021
+
+Security:
+
+* Carousel: prevent fetching comments from posts, and from attachments of private posts.
+
+= 9.5.2 = 
+
+* Release date: March 16, 2021
+
+**Improved compatibility**
+
+* Block Editor: avoid conflicts between multiple Jetpack blocks and Gutenberg version 10.1.0.
+
+**Bug fixes**
+
+* Instant Search: prevent IE11 from spawning overlay on load.
+* WordPress.com Toolbar and customizations: fix multiple issues causing navigation panel discrepancies between the WP-Admin dashboard and the WordPress.com dashboard.
+
+= 9.5.1 =
+
+* Release date: March 4, 2021
+
+**Bug fixes**
+
+* Sharing: avoid potential conflicts with the Blog Posts Block from Newspack.
+* Subscriptions Block: avoid validation errors when customizing font size on a site using the Gutenberg plugin.
 
 = 9.5 =
 
