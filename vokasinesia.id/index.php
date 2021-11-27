@@ -5,7 +5,6 @@
   $title    = $pUmum['title'];
 ?>
 <?php include("include/header.php"); ?>
-
     <div class="banner-slide">      
           <?php
           $slide = slide(6, "ASC"); 
@@ -96,7 +95,7 @@
         <h3>Video</h3>
             <div class="row">
                 <?php
-                $video = getListPost("data", 6, 0, 2, "DESC");
+                $video = getListPost("data", 6, 0, 4, "DESC");
                 if($video):
                     foreach($video as $key => $value): ?>
                     <div class="col-md-6 col-sm-12">
@@ -129,7 +128,7 @@
     	</div>  
     </div>
     
-    <div class="section5">
+    <!-- <div class="section5">
         <div class="container wrapper">
             <div class="separator"></div> 
             <h3>Profil Ditjen Vokasi </h3>   
@@ -188,6 +187,6 @@
                 </div>
             </div>
         </div>      
-    </div>    
-
+    </div>   -->
+               
     <?php include("include/footer.php"); ?>

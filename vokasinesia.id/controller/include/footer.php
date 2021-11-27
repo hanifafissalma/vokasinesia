@@ -14,7 +14,7 @@
     <script src="vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
+    
     <script type="text/javascript">
         function klikSubmit(a) {
             if(a==1){
